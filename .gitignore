@@ -1,0 +1,34 @@
+# SSH keys — NEVER commit
+_github-ssh-setup/
+id_ed25519
+id_ed25519.pub
+*.pem
+*.ppk
+
+# Source files used to BUILD the libraries — not used at runtime
+# (The compressed versions are already inlined in mlc-svg-library.js and mlc-image-library.js)
+TEAM WORKING - IMG/
+MLC Brand Guidelines.pptx
+
+# PowerPoint lock files
+~$*.pptx
+~$*.docx
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Node (in case anyone runs the helper scripts locally)
+node_modules/
+package-lock.json
+
+# Python build artefacts
+__pycache__/
+*.pyc
+.venv/
+venv/
